@@ -28,12 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            DrawButton = new Button();
+            ClearButton = new Button();
+            ExitButton = new Button();
+            groupBox1 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            TopMenuStrip = new MenuStrip();
+            FileTopMenuItem = new ToolStripMenuItem();
+            BottomStatusStrip = new StatusStrip();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            TopMenuStrip.SuspendLayout();
+            SuspendLayout();
+            // 
+            // DrawButton
+            // 
+            DrawButton.Location = new Point(6, 30);
+            DrawButton.Name = "DrawButton";
+            DrawButton.Size = new Size(134, 68);
+            DrawButton.TabIndex = 0;
+            DrawButton.Text = "&File";
+            DrawButton.UseVisualStyleBackColor = true;
+            // 
+            // ClearButton
+            // 
+            ClearButton.Location = new Point(146, 30);
+            ClearButton.Name = "ClearButton";
+            ClearButton.Size = new Size(134, 68);
+            ClearButton.TabIndex = 1;
+            ClearButton.Text = "&Clear";
+            ClearButton.UseVisualStyleBackColor = true;
+            // 
+            // ExitButton
+            // 
+            ExitButton.Location = new Point(286, 30);
+            ExitButton.Name = "ExitButton";
+            ExitButton.Size = new Size(134, 68);
+            ExitButton.TabIndex = 2;
+            ExitButton.Text = "E&xit";
+            ExitButton.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(ExitButton);
+            groupBox1.Controls.Add(DrawButton);
+            groupBox1.Controls.Add(ClearButton);
+            groupBox1.Location = new Point(804, 527);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(427, 128);
+            groupBox1.TabIndex = 3;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Black;
+            pictureBox1.Location = new Point(12, 36);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1219, 468);
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
+            // TopMenuStrip
+            // 
+            TopMenuStrip.ImageScalingSize = new Size(24, 24);
+            TopMenuStrip.Items.AddRange(new ToolStripItem[] { FileTopMenuItem });
+            TopMenuStrip.Location = new Point(0, 0);
+            TopMenuStrip.Name = "TopMenuStrip";
+            TopMenuStrip.Size = new Size(1243, 33);
+            TopMenuStrip.TabIndex = 5;
+            TopMenuStrip.Text = "TopMenuStrip";
+            // 
+            // FileTopMenuItem
+            // 
+            FileTopMenuItem.Name = "FileTopMenuItem";
+            FileTopMenuItem.Size = new Size(54, 29);
+            FileTopMenuItem.Text = "&File";
+            // 
+            // BottomStatusStrip
+            // 
+            BottomStatusStrip.ImageScalingSize = new Size(24, 24);
+            BottomStatusStrip.Location = new Point(0, 648);
+            BottomStatusStrip.Name = "BottomStatusStrip";
+            BottomStatusStrip.Size = new Size(1243, 22);
+            BottomStatusStrip.TabIndex = 6;
+            BottomStatusStrip.Text = "BottomStatusStrip";
+            // 
+            // DataLoggingF26Form
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(1243, 670);
+            Controls.Add(BottomStatusStrip);
+            Controls.Add(pictureBox1);
+            Controls.Add(groupBox1);
+            Controls.Add(TopMenuStrip);
+            MainMenuStrip = TopMenuStrip;
+            Name = "DataLoggingF26Form";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Data Logging";
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            TopMenuStrip.ResumeLayout(false);
+            TopMenuStrip.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button DrawButton;
+        private Button ClearButton;
+        private Button ExitButton;
+        private GroupBox groupBox1;
+        private PictureBox pictureBox1;
+        private MenuStrip TopMenuStrip;
+        private ToolStripMenuItem FileTopMenuItem;
+        private StatusStrip BottomStatusStrip;
     }
 }
