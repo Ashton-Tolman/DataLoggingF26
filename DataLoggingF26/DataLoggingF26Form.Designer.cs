@@ -1,6 +1,6 @@
 ﻿namespace DataLoggingF26
 {
-    partial class Form1
+    partial class DataLoggingF26Form
     {
         /// <summary>
         ///  Required designer variable.
